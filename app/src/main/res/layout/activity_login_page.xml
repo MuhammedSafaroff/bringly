@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPageActivity"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingBottom="80dp"
+    android:paddingTop="20dp">
+
+    <ImageButton
+        android:id="@+id/LoginBackBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_chevron_left"
+        android:background="@drawable/back_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/logo2"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_email_et"
+            android:hint="@string/email"
+            android:textColorHint="@color/colorBack"
+            app:hintTextColor="@color/colorBack"
+            android:layout_marginBottom="10dp"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorBack"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/et_bg"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_name_et"
+            android:hint="@string/password"
+            android:textColorHint="@color/colorBack"
+            app:hintTextColor="@color/colorBack"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorBack"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="@color/colorBack"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/et_bg"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/Login_enter_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAllCaps="false"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="@android:dimen/notification_large_icon_width"
+            android:layout_marginEnd="52dp"
+            android:background="@drawable/button_pink"
+            android:text="@string/daxil_ol"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/sifreni_unutmusan"
+            android:textColor="#828283"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

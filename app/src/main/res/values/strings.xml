@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Bringly</string>
+    <string name="daxil_ol">Daxil Ol</string>
+    <string name="qeydiyyatdan_kec">Qeydiyyatdan Keç</string>
+    <string name="email">E-poçt ünvanı</string>
+    <string name="password">Şifrə</string>
+    <string name="sifreni_unutmusan">Şifrəni unutmusan?</string>
+    <string name="ad">Ad</string>
+    <string name="soyad">Soyad</string>
+    <string name="e_mail_adresiniz">E-mail adresiniz</string>
+    <string name="tel_number">Mobil nömrəniz</string>
+    <string name="davam_et">Davam Et</string>
+    <string name="fin">FİN</string>
+    <string name="unvan">Ünvan</string>
+    <string name="again_password">Təkrar Şifrə</string>
+
+    <string-array name="cins">
+        <item>Cinsinizi seçin</item>
+        <item>Kişi</item>
+        <item>Qadın</item>
+    </string-array>
+
+    <string-array name="filial">
+        <item>Bağlamanı təhvil alacağınız filial</item>
+        <item>filial 1</item>
+        <item>filial 2</item>
+    </string-array>
+
+    <string-array name="tel_kode">
+        <item>050</item>
+        <item>051</item>
+        <item>055</item>
+        <item>070</item>
+        <item>077</item>
+
+    </string-array>
+
+    <string-array name="pasport">
+        <item>AZ</item>
+        <item>TR</item>
+
+
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Ana Səhifə</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+</resources>

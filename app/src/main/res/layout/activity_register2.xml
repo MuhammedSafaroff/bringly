@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <ImageButton
+        android:id="@+id/RegisterBackBtn2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_chevron_left"
+        android:background="@drawable/back_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="55dp"
+                android:background="@drawable/et_bg1">
+                <Spinner
+                    android:id="@+id/pasport"
+                    android:layout_width="80dp"
+                    android:layout_height="55dp"
+                    android:entries="@array/pasport"
+                    android:theme="@style/spinner"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_pasport_num"
+                app:hintEnabled="false"
+
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:inputType="number"
+                    android:textColor="@color/colorBack"
+                    android:textSize="18sp"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/et_bg2"
+                    android:hint="Ş.V seriya"
+                    android:textColorHint="@color/colorBack"
+                    app:hintTextColor="@color/colorBack"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_fin_et"
+            app:hintEnabled="false"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="text"
+                android:textColor="@color/colorBack"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/et_bg"
+                android:hint="@string/fin"
+                android:textColorHint="@color/colorBack"
+                app:hintTextColor="@color/colorBack"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_adress_et"
+            app:hintEnabled="false"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="text"
+                android:textColor="@color/colorBack"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/et_bg"
+                android:hint="@string/unvan"
+                android:textColorHint="@color/colorBack"
+                app:hintTextColor="@color/colorBack"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/et_bg"
+            android:layout_marginTop="10dp">
+            <Spinner
+                android:id="@+id/register_filial"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="15dp"
+                android:entries="@array/filial"
+                android:theme="@style/spinner"
+                />
+        </LinearLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_password_et"
+            app:hintEnabled="false"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorBack"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="textPassword"
+                android:textColor="@color/colorBack"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/et_bg"
+                android:hint="@string/password"
+                android:textColorHint="@color/colorBack"
+                app:hintTextColor="@color/colorBack"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_password_again_et"
+            app:hintEnabled="false"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorBack"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="textPassword"
+                android:textColor="@color/colorBack"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/et_bg"
+                android:hint="@string/again_password"
+                android:textColorHint="@color/colorBack"
+                app:hintTextColor="@color/colorBack"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAllCaps="false"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="@android:dimen/app_icon_size"
+            android:layout_marginEnd="52dp"
+            android:background="@drawable/button_pink"
+            android:text="Qeydiyyatı Tamamla"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
